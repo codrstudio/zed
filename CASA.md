@@ -46,7 +46,7 @@ Isso embute o agente no binário — usuário não edita nada. Pipeline `reregis
 
 **Tradução pro Zed (tarefa real):** o CSS colado é Tailwind/web — o Zed usa **tema próprio em JSON** (`assets/themes/*.json`, schema com `style`: background/text/element/editor/syntax/players). Não dá pra colar o CSS; eu **construo um tema Zed** (`assets/themes/keepcoding.json`, light+dark) a partir desses OKLCH + injetando o laranja `#e35336` nos acentos, e seto como default no `default.json` (`"theme": "KeepCoding"`).
 
-**Nome do app: `KeepCodium`** (decidido Guga, 2026-07-19). Vai em `display_name()` (`release_channel/lib.rs:192-199`), `app_id()` (`dev.keepcoding.KeepCodium`?), bundle metadata (`Cargo.toml:278-308`), About (`zed.rs:1662`), menu (`app_menus.rs:66`), instalador (`zed.iss` via `-D AppName`). NOTA: `KeepCodium` já existia como **ideia** (`keepcodium`/`keepcodium-site` em `D:/forge/workspace/forge/`). Guga cravou (2026-07-19): **este fork do Zed É o KeepCodium virando real** — não é produto paralelo, é a encarnação da ideia. Ao retomar, absorver/aposentar o que havia de conceito lá e apontar tudo pra cá.
+**Nome do app: `KeepCodium`** (decidido Guga, 2026-07-19). Vai em `display_name()` (`release_channel/lib.rs:192-199`), `app_id()` (`dev.keepcoding.KeepCodium`?), bundle metadata (`Cargo.toml:278-308`), About (`zed.rs:1662`), menu (`app_menus.rs:66`), instalador (`zed.iss` via `-D AppName`). NOTA (corrigida pelo Guga, 2026-07-19): existe um `keepcodium` do Forge (`D:/forge/workspace/forge/keepcodium`, receita VSCodium portátil) que só **coincide no nome** — o nosso NÃO é evolução daquele. Projeto próprio, desenho próprio (fork Zed + Kai via ACP). Ignorar o do Forge; não absorver nada de lá.
 
 ## Ordem sugerida (barato→caro, visível primeiro)
 
